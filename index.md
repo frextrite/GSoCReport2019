@@ -11,7 +11,7 @@ organisation: coala
 organisation_link : https://coala.io
 project: Plugin for Jetbrains IDEs
 project_link: https://summerofcode.withgoogle.com/projects/#6357733345853440
-tarball: https://github.com/frextrite/GSoCReport/raw/master/frextrite_coala.tar
+tarball: https://github.com/frextrite/GSoCReport2019/raw/master/frextrite_coala.tar.gz
 sha256sum: 737de911cbbf2d9be24e1ff4dd2796fee74e56630c9186da8aed31e1d7a53fe4
 mentors: >
  [Kilari Teja](https://github.com/ksdme) & [Vamshi Krishna](https://github.com/Vamshi99)
