@@ -21,7 +21,7 @@ phase:
  - Phase 2 : https://gitlab.com/coala/GSoC/gsoc-2019/-/milestones/12
  - Phase 3 : https://gitlab.com/coala/GSoC/gsoc-2019/-/milestones/13
 bio: >
- Hello visitor, I'm a pre-final year student (expected graduation 2021) pursuing Computer Science and Engineering from Delhi Technological University, India. This summer I worked with coala as part of GSoC'19 where-in I created a plugin for Jetbrains IDEs. The plugin provides a unified extension over the current CLI for linting and fixing code right within the IDE. Hence the developers can focus on writing clean code quickly (and automatically) instead of worrying about running a separate command line utility.
+ Hello visitor, I'm a pre-final year student (expected graduation 2021) pursuing Computer Science and Engineering from Delhi Technological University, India. This summer I worked with coala as part of GSoC'19 wherein I created a plugin for Jetbrains IDEs. The plugin provides a unified extension over the current CLI for linting and fixing code right within the IDE. Therefore, developers can focus on writing clean code quickly (and automatically) instead of worrying about running a separate command-line utility.
 social:
  - GitHub:
    - username: frextrite
@@ -642,52 +642,33 @@ The proposal was to create an robust and fully functional extension for coala CL
 
 <br>
 
-*Analyze with coala* menu entry is added to the *Analyze Menu* as well as right-click editor pop-up menu for faster invokation of coala.
+1. *Analyze with coala* menu entry is added to the *Analyze Menu* as well as right-click editor pop-up menu for faster invokation of coala.
 
-<br>
+2. Additionally *Clear coala highlights* menu entry has also been added for clearing highlights and getting on with the work.
 
-Additionally *Clear coala highlights* menu entry has also been added for clearing highlights and getting on with the work.
+3. Plugin is highly extensible via coala configuration file, viz, *.coafile* and has the ability to analyze all the files inside an IntelliJ project.
 
-<br>
+4. Settings page for plugin configuration has been implemented for setting of coala executable location.
 
-Plugin is highly extensible via coala configuration file, viz, *.coafile* and has the ability to analyze all the files inside an IntelliJ project.
+5. The coala executable on Linux and Windows can automatically be detected if it is present in PATH. In case the executable is not present in PATH, the user can specify the location manually via the Settings menu.
 
-<br>
+6. The plugin itself is light-weight hence running coala on the project should not have an impact on the compute resources.
 
-Settings page for plugin configuration has been implemented for setting of coala executable location.
+7. A console-like window is shown to the end-user during the execution of the plugin, for monitoring and analyzing *ERROR* and *DEBUG* information.  
 
-<br>
+8. To facilitate a better UX, pop-up balloons and informative notifications have been implemented indicating the current events.
 
-The coala executable on Linux and Windows can automatically be detected if it is present in PATH. In case the executable is not present in PATH, the user can specify the location manually via the Settings menu.
+9. Progress bar showing the current progress and the item being processed is shown to the end-user.
 
-<br>
-
-The plugin itself is light-weight hence running coala on the project should not have an impact on the compute resources.
-
-<br>
-
-A console-like window is shown to the end-user during the execution of the plugin, for monitoring and analyzing *ERROR* and *DEBUG* information. 
-
-<br> 
-
-To facilitate a better UX, pop-up balloons and informative notifications have been implemented indicating the current events.
-
-<br>
-
-Progress bar showing the current progress and the item being processed is shown to the end-user.
-
-<br>
 <br>
 
 Apart from the above mentioned plugin features, work was done on the overall framework aswell:
 
 <br>
 
-Continuous Integration is implemented for Multiple JDKs (OpenJDK 11 and 12) for Linux via Travis and Windows via Appveyor for catching code errors before they hit production.
+1. Continuous Integration is implemented for Multiple JDKs (OpenJDK 11 and 12) for Linux via Travis and Windows via Appveyor for catching code errors before they hit production.
 
-<br>
-
-Basic test suite based on JUnit and IntelliJ's internal testing fixtures is implemented for more robustness.
+2. Basic test suite based on JUnit and IntelliJ's internal testing fixtures is implemented for more robustness.
 
 #### Challenges
 
@@ -699,19 +680,13 @@ Jetbrains has an awesome set of SDK docs for working with the DevKit but these d
 
 <br>
 
-The first of the roadblocks I hit was while working with the coala process. I had to find a way to create a coala process thread that must run synchronously in the background. The process would emit the data to its stdout and stderr which should be captured for further processing. Although the platform SDK had APIs to work with processes and their execution and also capturing the text emitted by the process, a lot of research had to be done to find the API and once found prototyping had to be done for implementing.
+1. The first of the roadblocks I hit was while working with the coala process. I had to find a way to create a coala process thread that must run synchronously in the background. The process would emit the data to its stdout and stderr which should be captured for further processing. Although the platform SDK had APIs to work with processes and their execution and also capturing the text emitted by the process, a lot of research had to be done to find the API and once found prototyping had to be done for implementing.
 
-<br>
+2. The process of showing logs to the user via a console was also challenging to implement. The `ToolWindow` had to be created manually and a console attached to it during its initial set-up for it to work properly. Again, this wasn't documented anywhere, hence a lot of research was done to make it work.
 
-The process of showing logs to the user via a console was also challenging to implement. The `ToolWindow` had to be created manually and a console attached to it during its initial set-up for it to work properly. Again, this wasn't documented anywhere, hence a lot of research was done to make it work.
+3. Another challenging part of working with command line processes inside Java was to determine how to run them asynchronously inside the IDE without impacting the performance.
 
-<br>
-
-Another challenging part of working with command line processes inside Java was to determine how to run them asynchronously inside the IDE without impacting the performance.
-
-<br>
-
-But the main roadblock I faced was at the beginning of Phase 3. I had to find a way to process the data into Jetbrains friendly objects and finally annotate them. I had to research a lot on this topic, discussed about possible approaches on Gitter channel with fellow professionals, went through a bunch of similar plugins, prototyped a plethora of combinations, failed numerous times, until finally I hit the right solution. From that point it was just a matter of laying out the fundamental logic and implementing it.
+4. But the main roadblock I faced was at the beginning of Phase 3. I had to find a way to process the data into Jetbrains friendly objects and finally annotate them. I had to research a lot on this topic, discussed about possible approaches on Gitter channel with fellow professionals, went through a bunch of similar plugins, prototyped a plethora of combinations, failed numerous times, until finally I hit the right solution. From that point it was just a matter of laying out the fundamental logic and implementing it.
 
 <br>
 
@@ -724,41 +699,23 @@ coala is a well-established CLI linter, with the ability for analyzing and fixin
 
 <br>
 
-Support for analyzing a single file or a set of files. Currently coala analyzes files as per *.coafile* settings.
+1. Support for analyzing a single file or a set of files. Currently coala analyzes files as per *.coafile* settings.
 
-<br>
+2. Support for multiple error level highlight modes. coala supports 3 modes, INFO, WARNING, and ERROR.
 
-Support for multiple error level highlight modes. coala supports 3 modes, INFO, WARNING, and ERROR.
+3. Enhancements to the console-window for showing showing interactive buttons to *Analyze current file*, *Analyze multiple files* and *Clearing the highlights* etc.
 
-<br>
+4. Enhancements to the console-window to show a tree-view of all the problems that were detected by coala. The root being the file, containing multiple leaves representing the detected problems for a particular file.
 
-Enhancements to the console-window for showing showing interactive buttons to *Analyze current file*, *Analyze multiple files* and *Clearing the highlights* etc.
+5. Caching mechanism to support on the fly analysis. coala has a caching mechanism implemented in the main module. An extension of the same can be implemented for the plugin to support on-the-fly analysis so that actual calls to run coala CLI is reduced.
 
-<br>
+6. Optimizing the process of highlighting by just highlighting the currently opened files. The caching mechanism may be of help here.
 
-Enhancements to the console-window to show a tree-view of all the problems that were detected by coala. The root being the file, containing multiple leaves representing the detected problems for a particular file.
+7. Ability to fix code as per coala suggestions. coala emits a diff of a possible fix. This feature could be researched and used for the same.
 
-<br>
+8. A more integrated test suite with high coverage. IntelliJ recommends integrations tests and testing of the features as a whole. Apart from the integration tests, unit tests for fundamental class files can be implemented for better protection against breaking changes.
 
-Caching mechanism to support on the fly analysis. coala has a caching mechanism implemented in the main module. An extension of the same can be implemented for the plugin to support on-the-fly analysis so that actual calls to run coala CLI is reduced.
+9. CI/CD pipeline for automatically publishing the plugin to Jetbrains repository.
 
-<br>
-
-Optimizing the process of highlighting by just highlighting the currently opened files. The caching mechanism may be of help here.
-
-<br>
-
-Ability to fix code as per coala suggestions. coala emits a diff of a possible fix. This feature could be researched and used for the same.
-
-<br>
-
-A more integrated test suite with high coverage. IntelliJ recommends integrations tests and testing of the features as a whole. Apart from the integration tests, unit tests for fundamental class files can be implemented for better protection against breaking changes.
-
-<br>
-
-CI/CD pipeline for automatically publishing the plugin to Jetbrains repository.
-
-<br>
-
-Support for coala configuration file *.coafile* syntax.
+10. Support for coala configuration file *.coafile* syntax.
 
