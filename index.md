@@ -630,6 +630,58 @@ activity:
     - repo: coala-jetbrains
     - link: https://github.com/frextrite/coala-jetbrains/commit/5ed83b0142ee3165fbed6f67f50683a2e0534908
     - details: "Update README"
+  - 148:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/967e972bbab6130201ded6c5ce875595bbc1b6a0
+    - details: "plugin.xml: Change plugin id"
+  - 149:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/9d3da8bf204c5c83a5882fe217829213d7fe43ad
+    - details: "Make the plugin production ready by updating gradle build script"
+  - 150:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/dfbffa6c61f1723f1ee7ca3448ddcc11c312e677
+    - details: "plugin.xml: Modify plugin description"
+  - 151:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/77d270071ff09e2e6fbfcd40e594c80427d1ecf4
+    - details: "README: Update steps to run"
+  - 152:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/0b2cdd6132075204b8a589bce15b481526331ac6
+    - details: "README: Add details about .coafile"
+  - 153:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/3b1bcb2d14e4c2d479228bc3dbc7e6a1cbc2f073
+    - details: "Add run configuration for running the plugin"
+  - 154:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/fa5fcebdc8ec609b8e02c7473355222667308ccc
+    - details: ".gitignore: Add exception for Gradle run configurations"
+  - 155:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/2ec0977f43f5dddb381fa1e2e856b46fdc968fdf
+    - details: "README.md: Add section with instructions to build the plugin"
+  - 156:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/6392e7c9480a2630eeebf05bae83bb18fceb7556
+    - details: "Deserializers: Migrate from gherkin to com.google.gson"
+  - 157:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/5471e398bec897cd4ba9dc092960275254dd4647
+    - details: "ProjectSettings.java: Remove IOUtils"
+  - 158:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/443baecd1b24bcd5534452571d043cbe914c585f
+    - details: "build.gradle: Release v0.1.1"
+  - 159:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/a8cae4fa56fb3b772333ef3610668db8934172b9
+    - details: "README.md: Update plugin name according to marketplace name"
+  - 160:
+    - repo: coala-jetbrains
+    - link: https://github.com/frextrite/coala-jetbrains/commit/6ebc00901c7d6896c5aa90848079e24d51900d1b
+    - details: "README.md: Add link to demonstration video"
 
 ---
 
@@ -638,7 +690,14 @@ activity:
 
 #### Work Done
 
-The proposal was to create an robust and fully functional extension for coala CLI for Jetbrains IDEs that would provide a unified experience to the developers to analyze lint issues and fix code right within the IDE. And I am proud to say that coala now *officially* supports Jetbrains IDEs. In a nutshell, a single tap of a button would unleash coala and all of its friendly bears to annotate lint errors in the currently opened project. Here are a few features of the plugin:
+The proposal was to create an robust and fully functional extension for coala CLI for Jetbrains IDEs that would provide a unified experience to the developers to analyze lint issues and fix code right within the IDE. And I am proud to say that coala now *officially* supports Jetbrains IDEs. In a nutshell, a single tap of a button would unleash coala and all of its friendly bears to help you find and annotate lint problems in the currently opened project.
+
+Jetbrains Plugin Repository Link: https://plugins.jetbrains.com/plugin/12925-coala-code-analysis
+
+coala Code Analysis Demonstration Video: https://youtu.be/a9iQzABYdJg
+
+
+Let's look at a few features of the plugin:
 
 <br>
 
@@ -690,7 +749,7 @@ Jetbrains has an awesome set of SDK docs for working with the DevKit but these d
 
 <br>
 
-These were some pretty challenging roadblocks that I faced, but I never lost hope. I was determined to find optimized solutions to these problems, and with consistency, hardwork and most importantly with the guidance of my mentors, I was able to overcome each and every challenge.
+These were some pretty challenging roadblocks that I faced, but I never lost hope. I was determined to find optimized solutions to these problems, and with consistency, hardwork and most importantly with the guidance of my mentors, I was able to overcome each and every challenge. I would especially like to thank [Kilari Teja](https://github.com/ksdme) who constantly pushed me out of my comfort zone to make this project a success.
 
 
 #### Work to be done
