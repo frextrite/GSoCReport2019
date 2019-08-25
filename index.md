@@ -692,14 +692,15 @@ activity:
 
 The proposal was to create an robust and fully functional extension for coala CLI for Jetbrains IDEs that would provide a unified experience to the developers to analyze lint issues and fix code right within the IDE. And I am proud to say that coala now *officially* supports Jetbrains IDEs. In a nutshell, a single tap of a button would unleash coala and all of its friendly bears to help you find and annotate lint problems in the currently opened project.
 
-Jetbrains Plugin Repository Link: https://plugins.jetbrains.com/plugin/12925-coala-code-analysis
+<br>
 
-coala Code Analysis Demonstration Video: https://youtu.be/a9iQzABYdJg
+Jetbrains Plugin Repository Link: [https://plugins.jetbrains.com/plugin/12925-coala-code-analysis](https://plugins.jetbrains.com/plugin/12925-coala-code-analysis)
 
-
-Let's look at a few features of the plugin:
+Demonstration Video: [https://youtu.be/a9iQzABYdJg](https://youtu.be/a9iQzABYdJg)
 
 <br>
+
+Let's look at a few features of the plugin:
 
 1. *Analyze with coala* menu entry is added to the *Analyze Menu* as well as right-click editor pop-up menu for faster invokation of coala.
 
@@ -722,8 +723,6 @@ Let's look at a few features of the plugin:
 <br>
 
 Apart from the above mentioned plugin features, work was done on the overall framework aswell:
-
-<br>
 
 1. Continuous Integration is implemented for Multiple JDKs (OpenJDK 11 and 12) for Linux via Travis and Windows via Appveyor for catching code errors before they hit production.
 
