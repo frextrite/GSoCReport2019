@@ -21,7 +21,7 @@ phase:
  - Phase 2 : https://gitlab.com/coala/GSoC/gsoc-2019/-/milestones/12
  - Phase 3 : https://gitlab.com/coala/GSoC/gsoc-2019/-/milestones/13
 bio: >
- Hello visitor, I'm a pre-final year student (expected graduation 2021) pursuing Computer Science and Engineering from Delhi Technological University, India. This summer I worked with coala as part of GSoC'19 wherein I created a plugin for Jetbrains IDEs. The plugin provides a unified extension over the current CLI for linting and fixing code right within the IDE. Therefore, developers can focus on writing clean code quickly (and automatically) instead of worrying about running a separate command-line utility.
+ Hello visitor, I'm a pre-final year student (expected May 2021) pursuing Computer Science and Engineering from Delhi Technological University, India. This summer I worked with coala as part of GSoC'19 wherein I created a plugin for Jetbrains IDEs. The plugin provides a unified extension over the current CLI for linting and fixing code right within the IDE. Therefore, developers can focus on writing clean code quickly (and automatically) instead of worrying about running a separate command-line utility.
 social:
  - GitHub:
    - username: frextrite
