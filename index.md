@@ -714,7 +714,7 @@ Let's look at a few features of the plugin:
 
 6. The plugin itself is light-weight hence running coala on the project should not have an impact on the compute resources.
 
-7. A console-like window is shown to the end-user during the execution of the plugin, for monitoring and analyzing *ERROR* and *DEBUG* information.  
+7. A console-like window is shown to the end-user during the execution of the plugin, for monitoring and analyzing *ERROR* and *DEBUG* information.
 
 8. To facilitate a better UX, pop-up balloons and informative notifications have been implemented indicating the current events.
 
